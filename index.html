@@ -23,7 +23,7 @@
             border-radius: 10px;
         }
         .header img {
-            max-width: 150px;
+            max-width: 100px;
         }
         h1 {
             color: #d4af37;
@@ -73,7 +73,7 @@
             margin-top: 10px;  }
         }
         #levelImageContainer {
-            margin-top: 20px;
+            margin-top: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -151,13 +151,13 @@
             if (targetElement.classList.contains('category')) {
                 if (data.startsWith(correctId)) {
                     targetElement.appendChild(draggedElement);
-                    score += 5;
+                    score += 10;
                     scoreValue.textContent = score;
                     updateLevel();
                 } else {
                     // Si el elemento no coincide, lo devolvemos a su lugar original
                     itemsContainer.appendChild(draggedElement);
-                    score -= 5;
+                    score -= 10;
                     scoreValue.textContent = score;
                     updateLevel();
                 }
