@@ -178,19 +178,19 @@
            }
        }
        function updateLevel() {
-           let level = 'Aprendiz';
+           let level = 'Seleccionador';
            let image = 'aprendiz.png';
            if (score >= 20) {
-               level = 'Hechicero';
+               level = 'Ordenador';
                image = 'hechicero.png';
            } else if (score >= 40) {
-               level = 'Mago';
+               level = 'Limpiador';
                image = 'mago.png';
            } else if (score >= 60) {
-               level = 'Mago Supremo';
+               level = 'Estandarizador';
                image = 'supremo.png';
            } else if (score >= 80) {
-               level = 'Gran Consejero';
+               level = 'Disciplinado';
                image = 'director.png';
            }
            scoreMessage.textContent = `Nivel: ${level}`;
